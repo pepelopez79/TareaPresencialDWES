@@ -38,8 +38,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo '<tr><th>Campo</th><th>Valor</th></tr>';
     
     foreach ($datos as $campo => $valor) {
+        // Verificamos si el valor está vacío
+        if (empty($valor)) {
+            $valor = '--- :(';
+        }
+    
         echo "<tr><td>$campo</td><td>$valor</td></tr>";
-    }
+    }    
     
     echo '</table>';
 }

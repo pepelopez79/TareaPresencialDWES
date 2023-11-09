@@ -29,21 +29,6 @@ function novalido($errors) {
   return '<div class="alert alert-danger" style="margin-top:5px;">Debe corregir los errores para poder registrar el usuario!! :(  </div>';
 }
 
-// Visualización de las variables obtenidas mediante el formulario
-function valoresfrm() {
-  global $expediente, $nif, $apellidos, $nombre, $sexo, $email, $telefono, $imagen, $beca;
-  echo "<h4>Valores obtenidos mediante el formulario</h4><br/>";
-  echo "<strong>Número de Expediente: </strong>" . $expediente . "<br/>";
-  echo "<strong>NIF: </strong>" . $nif . "<br/>";
-  echo "<strong>Apellidos: </strong>" . $apellidos . "<br/>";
-  echo "<strong>Nombre: </strong>" . $nombre . "<br/>";
-  echo "<strong>Sexo: </strong>" . $sexo . "<br/>";
-  echo "<strong>Email: </strong>" . $email . "<br/>";
-  echo "<strong>Teléfono Móvil: </strong>" . $telefono . "<br/>";
-  echo "<strong>Imagen: </strong>" . $imagen . "<br/>";
-  echo "<strong>Solicitar beca: </strong>" . ($beca == "on" ? "Sí" : "No") . "<br/>";
-}
-
 if (isset($_POST["submit"])) {
   // Número de expediente
   if (!empty($_POST["expediente"]) && preg_match("/^[A-Za-z]{2,5}-\d{4}-\d{4}\/[HM]$/", $_POST["expediente"])) {
