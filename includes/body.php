@@ -4,7 +4,7 @@
 
 <div class="centrar">	
   <div class="container cuerpo text-center">
-    <p><h2><img class="alineadoTextoImagen" src="images//firma.png" width="50px"/>INTRODUCCIÓN DE DATOS EXPEDIENTES</h2></p>
+    <p><h2><img class="alineadoTextoImagen" src="images//firma.png" width="50px"/> INTRODUCCIÓN DE DATOS EXPEDIENTES</h2></p>
     <?php echo validez($errors); ?>
     <?php if (isset($_POST["submit"]) && (count($errors) > 0)) { echo novalido($errors); } ?>
   </div>

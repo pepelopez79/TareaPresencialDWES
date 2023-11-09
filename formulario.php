@@ -5,6 +5,7 @@
   <body>
   <?php require 'includes/validar.php'; ?>
     <?php require 'includes/body.php'; ?>
+    <?php require 'includes/mostrarTabla.php'; ?>
     <?php require 'includes/footer.php'; ?>
   </body>
 </html>

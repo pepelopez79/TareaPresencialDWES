@@ -1,5 +1,4 @@
 <?php
-// Array de errores y las variables asociadas a cada campo
 $errors     = [];
 $expediente = "";
 $nif        = "";
