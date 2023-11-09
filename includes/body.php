@@ -6,7 +6,7 @@
   <div class="container cuerpo text-center">
     <p><h2><img class="alineadoTextoImagen" src="images//firma.png" width="50px"/>INTRODUCCIÓN DE DATOS EXPEDIENTES</h2></p>
     <?php echo validez($errors); ?>
-    <?php if (isset($_POST["submit"]) && (count($errors) == 0)) { valoresfrm(); } ?>
+    <?php if (isset($_POST["submit"]) && (count($errors) > 0)) { echo novalido($errors); } ?>
   </div>
   <div class="container">
     <form enctype="multipart/form-data" method="POST" action="formulario.php">
