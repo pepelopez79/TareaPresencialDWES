@@ -1,3 +1,3 @@
 # TareaPresencialDWES
 
-Enlace a la web: https://pepelopez79.github.io/TareaPresencialDWES/
+Formulario de validación de campos utilizando HTML, CSS y PHP.
